@@ -12,6 +12,7 @@
 		BDC6351D1D70DC2D0077E860 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDC6351B1D70DC2D0077E860 /* Main.storyboard */; };
 		BDC6351F1D70DC2D0077E860 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDC6351E1D70DC2D0077E860 /* Assets.xcassets */; };
 		BDC635221D70DC2D0077E860 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDC635201D70DC2D0077E860 /* LaunchScreen.storyboard */; };
+		BDC6352A1D70EE8F0077E860 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC635291D70EE8F0077E860 /* Regex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		BDC6351E1D70DC2D0077E860 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDC635211D70DC2D0077E860 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDC635231D70DC2D0077E860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDC635291D70EE8F0077E860 /* Regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				BDC6351E1D70DC2D0077E860 /* Assets.xcassets */,
 				BDC635201D70DC2D0077E860 /* LaunchScreen.storyboard */,
 				BDC635231D70DC2D0077E860 /* Info.plist */,
+				BDC635291D70EE8F0077E860 /* Regex.swift */,
 			);
 			path = "triangulo-ios";
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			files = (
 				BDC6351A1D70DC2D0077E860 /* ViewController.swift in Sources */,
 				BDC635181D70DC2D0077E860 /* AppDelegate.swift in Sources */,
+				BDC6352A1D70EE8F0077E860 /* Regex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +290,7 @@
 				BDC635281D70DC2D0077E860 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
