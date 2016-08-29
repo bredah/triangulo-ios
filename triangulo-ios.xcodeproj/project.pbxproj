@@ -13,6 +13,14 @@
 		BDC6351F1D70DC2D0077E860 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDC6351E1D70DC2D0077E860 /* Assets.xcassets */; };
 		BDC635221D70DC2D0077E860 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDC635201D70DC2D0077E860 /* LaunchScreen.storyboard */; };
 		BDC6352A1D70EE8F0077E860 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC635291D70EE8F0077E860 /* Regex.swift */; };
+		BDC6352D1D7468670077E860 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC635191D70DC2D0077E860 /* ViewController.swift */; };
+		BDC6352E1D7468670077E860 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC635171D70DC2D0077E860 /* AppDelegate.swift */; };
+		BDC6352F1D7468670077E860 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC635291D70EE8F0077E860 /* Regex.swift */; };
+		BDC635321D7468670077E860 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDC635201D70DC2D0077E860 /* LaunchScreen.storyboard */; };
+		BDC635331D7468670077E860 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDC6351E1D70DC2D0077E860 /* Assets.xcassets */; };
+		BDC635341D7468670077E860 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDC6351B1D70DC2D0077E860 /* Main.storyboard */; };
+		BDC6353B1D74699C0077E860 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC6353A1D74699C0077E860 /* CFNetwork.framework */; };
+		BDC6353D1D747AB50077E860 /* calabash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC6353C1D747AB50077E860 /* calabash.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,9 @@
 		BDC635211D70DC2D0077E860 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDC635231D70DC2D0077E860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDC635291D70EE8F0077E860 /* Regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
+		BDC635381D7468670077E860 /* triangulo-ios-cal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "triangulo-ios-cal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDC6353A1D74699C0077E860 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		BDC6353C1D747AB50077E860 /* calabash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = calabash.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +42,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDC6353D1D747AB50077E860 /* calabash.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDC635301D7468670077E860 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDC6353B1D74699C0077E860 /* CFNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +60,8 @@
 		BDC6350B1D70DC2D0077E860 = {
 			isa = PBXGroup;
 			children = (
+				BDC6353C1D747AB50077E860 /* calabash.framework */,
+				BDC6353A1D74699C0077E860 /* CFNetwork.framework */,
 				BDC635161D70DC2D0077E860 /* triangulo-ios */,
 				BDC635151D70DC2D0077E860 /* Products */,
 			);
@@ -49,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				BDC635141D70DC2D0077E860 /* triangulo-ios.app */,
+				BDC635381D7468670077E860 /* triangulo-ios-cal.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,6 +110,23 @@
 			productReference = BDC635141D70DC2D0077E860 /* triangulo-ios.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BDC6352B1D7468670077E860 /* triangulo-ios-cal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDC635351D7468670077E860 /* Build configuration list for PBXNativeTarget "triangulo-ios-cal" */;
+			buildPhases = (
+				BDC6352C1D7468670077E860 /* Sources */,
+				BDC635301D7468670077E860 /* Frameworks */,
+				BDC635311D7468670077E860 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "triangulo-ios-cal";
+			productName = "triangulo-ios";
+			productReference = BDC635381D7468670077E860 /* triangulo-ios-cal.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -116,6 +156,7 @@
 			projectRoot = "";
 			targets = (
 				BDC635131D70DC2D0077E860 /* triangulo-ios */,
+				BDC6352B1D7468670077E860 /* triangulo-ios-cal */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +172,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BDC635311D7468670077E860 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDC635321D7468670077E860 /* LaunchScreen.storyboard in Resources */,
+				BDC635331D7468670077E860 /* Assets.xcassets in Resources */,
+				BDC635341D7468670077E860 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -141,6 +192,16 @@
 				BDC6351A1D70DC2D0077E860 /* ViewController.swift in Sources */,
 				BDC635181D70DC2D0077E860 /* AppDelegate.swift in Sources */,
 				BDC6352A1D70EE8F0077E860 /* Regex.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDC6352C1D7468670077E860 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDC6352D1D7468670077E860 /* ViewController.swift in Sources */,
+				BDC6352E1D7468670077E860 /* AppDelegate.swift in Sources */,
+				BDC6352F1D7468670077E860 /* Regex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +314,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "triangulo-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "bredah.triangulo-ios";
@@ -264,9 +329,45 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "triangulo-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "bredah.triangulo-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BDC635361D7468670077E860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/triangulo-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-force_load",
+					"\"$(SOURCE_ROOT)/calabash.framework/calabash\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "bredah.triangulo-ios-cal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BDC635371D7468670077E860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/triangulo-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-force_load",
+					"\"$(SOURCE_ROOT)/calabash.framework/calabash\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "bredah.triangulo-ios-cal";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -288,6 +389,15 @@
 			buildConfigurations = (
 				BDC635271D70DC2D0077E860 /* Debug */,
 				BDC635281D70DC2D0077E860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDC635351D7468670077E860 /* Build configuration list for PBXNativeTarget "triangulo-ios-cal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDC635361D7468670077E860 /* Debug */,
+				BDC635371D7468670077E860 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
