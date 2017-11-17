@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         let strLadoB :String = textLadoB.text!
         let strLadoC :String = textLadoC.text!
         
-        if Regex.init("\\D").test(strLadoA)
+        if Regex.init("\\D").test(input: strLadoA)
             || strLadoA.isEmpty
             || Int(strLadoA) < 0
             || Regex.init("\\D").test(strLadoB)
